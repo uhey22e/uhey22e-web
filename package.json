@@ -1,0 +1,30 @@
+{
+  "name": "uhey22e-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all clean build:* copy:*",
+    "build:pug": "pug --pretty --out ./public ./src/pug/index.pug",
+    "build:sass": "node-sass src/sass/main.scss public/css/main.css",
+    "copy:img": "cp -r src/img public/",
+    "clean": "rm -rf public/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uhey22e/uhey22e-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uhey22e/uhey22e-web/issues"
+  },
+  "homepage": "https://github.com/uhey22e/uhey22e-web#readme",
+  "devDependencies": {
+    "node-sass": "^3.11.2",
+    "npm-run-all": "^3.1.1",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
