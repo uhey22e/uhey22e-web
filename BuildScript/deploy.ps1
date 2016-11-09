@@ -11,7 +11,7 @@ if (-not (Test-Path $destination))
 
 try
 {
-  # msdeploy can not be used. Use robocopy to sync folder
+  # msdeploy can not be used. Use robocopy to sync folder
   . Robocopy.exe $source $destination /MIR /FFT /Z /XA:H /W:5
   exit 0
 }
