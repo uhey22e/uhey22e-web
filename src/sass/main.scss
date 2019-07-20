@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import 'social_icons';
 
-html, body, .container {
-  height: 100%;
-}
-
 body {
-  background-image: url('../img/bg.jpg');
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-  background-size: cover;
+  margin: 0;
 }
 
 .container {
-  display: -webkit-flex;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('/img/bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
 .box {
   width: 520px;
-  margin-bottom: 3%;
+  margin-bottom: 1rem;
   padding: 50px 0;
   background: rgba(255,255,255,0.7);
   text-align: center;
@@ -35,20 +32,13 @@ body {
   margin-bottom: 1.5rem;
   font-size: 1.8em;
   font-family: 'Lora', serif;
-  color: #777;
-}
-
-.big {
-  font-size: 1.3em;
+  font-weight: 400;
   color: #555;
 }
 
 .link-container {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 

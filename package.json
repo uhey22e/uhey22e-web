@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all clean build:* copy:*",
-    "build:pug": "pug --pretty --out ./public ./src/pug/index.pug",
-    "build:sass": "node-sass src/sass/main.scss public/css/main.css",
-    "copy:img": "cp -r src/img public/",
-    "clean": "rm -rf public/*"
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
@@ -22,9 +18,13 @@
   },
   "homepage": "https://github.com/uhey22e/uhey22e-web#readme",
   "devDependencies": {
-    "node-sass": "^3.11.2",
-    "npm-run-all": "^3.1.1",
-    "pug": "^2.0.0-beta6",
-    "pug-cli": "^1.0.0-alpha6"
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.3"
   }
 }
