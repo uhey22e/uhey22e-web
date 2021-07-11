@@ -1,31 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import 'social_icons';
 
-body {
-  margin: 0;
-}
+// body {
+//   margin: 0;
+// }
 
-.container {
-  width: 100%;
-  height: 100vh;
-
+.bgimg {
   background-image: url('/img/bg.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.box {
-  width: 520px;
-  margin-bottom: 1rem;
-  padding: 50px 0;
+.bgwhite {
   background: rgba(255,255,255,0.7);
-  text-align: center;
 }
 
 .title {
@@ -34,12 +23,6 @@ body {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #555;
-}
-
-.link-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a.social {
